@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-abr-2018, 20:36:15
+    Author     : andresillo
+*/
+
+#errorLogin {
+    opacity: 0;
+    position: absolute;
+    top: 120%;
+    width: 30%;
+    background-color: #D35400;
+    text-align: center;
+    left: -7%;
+    display: none;
+}
+
+body {
+    background-image:url(imagenes/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.btn-default {
+    width: 7%;
+    margin-top: 1%;
+}
+
+#contenedorLogin {
+    position: relative;
+    left: 44%;
+    margin-top: 10%;
+}
+
+#titulo {
+    font-size: 2em;
+    
+}
+
+#inputLogin {
+    margin-top: 2%;
+    width: 15%;
+}
+
+#tituLog {
+    font-size: 2em;
+    
+}
+
+#mensajeFaltaCred {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    font-size: 1.5em;
+    width: 55%;
+    left: 25%;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+#enlaces {
+    background-color: #AED6F1;
+    color: black;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+}
+
+#usuarioImg {
+    position: absolute;
+    left: 88%;
+    top: 5%;
+}
+
+#nomUsu {
+    display: inline-block;
+    width: 5%;
+}
+
+#logout {
+    background-color: #AED6F1;
+    color: black;
+    position: absolute;
+    left: 95%;
+    top: 15%;
+    z-index: 1;
+}
+
+#goInfoContenedor {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+#enlaceInfo {
+    margin-top: 4%;
+    background-color: #AED6F1;
+    color: black;
+}
+
+#botonInfoAct {
+    display: inline-block;
+    position: absolute;
+    margin: 2%;
+    width: 10%;
+    height: 7%;
+    left: 35%;
+}
+
+#botonInfoMus {
+    display: inline-block;
+    position: absolute;
+    margin-top: 2%;
+    width: 10%;
+    height: 7%;
+    left: 57%;
+}
+
+#botonInfoEje, #botonInfoEje1, #botonInfoEje2, #botonInfoEje3, #botonInfoEje4, #botonInfoEje5 {
+    display: none;
+    position: relative;
+    margin-top: 7%;
+    width: 10%;
+    height: 7%;
+    left: 20%;
+}
+
+#infoTablaAct {
+    display: none;
+    position: absolute;
+    top: 25%;
+    width: 70%;
+    left: 15%;
+}
+
+#infoTablaEje {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 60%;
+}
+
+#infoTablaEje1 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+}
+
+#infoTablaEje2 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 20%;
+}
+
+#infoTablaEje3 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 72.5%;
+}
+
+#infoTablaEje4 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 40%;
+}
+
+#infoTablaEje5 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 49.8%;
+}
+
+#botonEliminar {
+    color: black;
+}
+
+#botonModificar {
+    color: black;
+}
+
+#listadoClientes {
+    position: absolute;
+    top: 13%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#formuModif {
+    display: none;
+}
+
+input {
+    border-radius: 5%;
+}
+
+table {
+    border: 5px solid red;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+tr, th, td {
+    border: 2px solid red;
+    padding: 2px;
+}
+
+
+
+#indexMon {
+    background-color: #AED6F1;
+    color: black;
+    position: absolute;
+    left: 98%;
+    top: 15%;
+    z-index: 1;  
+    width: 7%;
+    white-space: normal;
+}
+
+#tablaListMon {
+    margin-left: 22%;
+    margin-top: 5%;
+}
+
+#tablaList {
+    margin-top: 3%;
+    display: inline-block;
+    margin-left: -2%;
+}
+
+#tocaPelotas {
+    width: 100%;
+    height: 100%;
+}
