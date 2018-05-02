@@ -44,7 +44,7 @@
                 <td><input type="text" name="apellidos" size="50" required></td>
                 <td><input type="date" name="fechNac" size="5" required></td>
                 
-                <td><input type="number" name="codAct" min="1" max="5" required></td>
+                <td><input type="number" name="codAct" min="1" max="6" required></td>
                 <td><input type="hidden" name="user" value=<%=request.getParameter("user")%>></td>
                 <td><button type="submit" value="Enviar" id="nuevoCliente">Enviar</button>    </td>      
             </form></tr>        
@@ -85,7 +85,7 @@
     <%
       }
 
-
+conexion.close();
     %>
     
     

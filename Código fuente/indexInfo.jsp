@@ -197,6 +197,9 @@
           <a id="enlaces" href="index.jsp" class="btn btn-primary btn-lg active" role="button">
             Volver a la pantalla de login
         </a>
+          
+          <%conexion.close();
+          conexion2.close();%>
     </body>
     <script>
 

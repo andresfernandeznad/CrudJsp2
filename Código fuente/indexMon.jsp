@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="estilos.css">
     </head>
     <body>
+        <% request.setCharacterEncoding("UTF-8"); %>
         <h1 id="titulo">GIMNASIO "..."</h1>
         <div id="usuarioImg"> <img src="imagenes/usuario.jpg" width="35%">
             <span id="nomUsu"><%=request.getParameter("user")%></span></div>
@@ -54,16 +55,19 @@
              %> 
             <td>
             <form id="modificar" name="modificar" method="get" action="cambiaMon.jsp">
-                <input type="hidden" name="codigoCli" value="<%=listadoMon.getString("codMon")%>" >
+                <input type="hidden" name="codigoMon" value="<%=listadoMon.getString("codMon")%>" >
                 <input type="hidden" name="nombre" value="<%=listadoMon.getString("nomMon")%>" >
                 <input type="hidden" name="apellido" value="<%=listadoMon.getString("apeMon")%>" >
                 <input type="hidden" name="user" value=<%=request.getParameter("user")%>>
                 <input type="hidden" name="codigoAct" value="<%=listadoMon.getString("CodAct")%>" >
+                <input type="hidden" name="nombreAct" value="<%=listadoMon.getString("NomAct")%>" >
                 <button type="submit" class="btn btn-primary" id="botonModificar">Cambiar de monitor</button>
             </form>
         </td>
               
-          <%  }%>
+          <%  }
+          
+          conexion.close();%>
             
             
         </table>

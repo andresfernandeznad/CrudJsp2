@@ -54,7 +54,8 @@
             <%}
             } catch (Exception ex) {
 
-            }%>
+            }
+            conexion.close();%>
     </body>
     <script>
 

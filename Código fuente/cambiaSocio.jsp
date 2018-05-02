@@ -25,21 +25,21 @@
          <% request.setCharacterEncoding("UTF-8"); %>
     <div>
       <br><br>
-        <div>Modificación de socio</div>
+        <div id="tituloCambia">Modificación de socio</div>
           <form method="get" action="guardarSocioModificado.jsp">
         <div id="texto">Codigo de cliente
-            <input type="text" name="codigo" size="10" value="<%= request.getParameter("codigoCli") %>" readonly><br></div>
+            <input id="inputCambia" type="text" name="codigo" size="10" value="<%= request.getParameter("codigoCli") %>" readonly><br></div>
         <div id="texto">Nombre
             <input type="hidden" name="user" value=<%=request.getParameter("user")%>>
-            <input type="text" name="nombre" size="30" value="<%= request.getParameter("nombre") %>"><br></div>
+            <input id="inputCambia" type="text" name="nombre" size="30" value="<%= request.getParameter("nombre") %>"><br></div>
         <div id="texto">Apellidos
-            <input type="text" name="apellidos" size="50" value="<%= request.getParameter("apellido") %>"><br></div>
+            <input id="inputCambia" type="text" name="apellidos" size="50" value="<%= request.getParameter("apellido") %>"><br></div>
         <div id="texto">Fecha de nacimiento
-            <input type="text" name="fechNac" size="5" value="<%= request.getParameter("fechnac") %>"><br></div>
+            <input id="inputCambia" type="text" name="fechNac" size="5" value="<%= request.getParameter("fechnac") %>"><br></div>
         <div id="texto">Código de la actividad a la que quieres apuntarte
-            <input type="text" name="codiAct" size="20" value="<%= request.getParameter("codigoAct") %>"><br></div>
-            <a href="indexEncargado.jsp?user=<%=request.getParameter("user")%>"><div id="cancelar">Cancelar</div></a>
-        <button type="submit" value="Enviar" id="nuevoCliente">Enviar</button>          
+            <input id="inputCambia" type="number" min="1" max="6" name="codiAct" size="20" value="<%= request.getParameter("codigoAct") %>"><br></div>
+            <a id="enlaceCambia" class="btn btn-primary btn-sm active" href="indexEncargado.jsp?user=<%=request.getParameter("user")%>"><div id="cancelar">Cancelar</div></a>
+        <button type="submit" value="Enviar" id="nuevoCliente2" class="btn-sm btn-success">Enviar</button>          
         </form>
 
       </div>
